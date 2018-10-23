@@ -1,0 +1,11 @@
+version: '3'
+services:
+  app:
+    build: .
+    ports:
+      - "8888:8888"
+    restart: always
+    volumes:
+      - ./INPUT:/home/jovyan/work/INPUT
+      - ./OUTPUT:/home/jovyan/work/OUTPUT
+      - ./test:/home/jovyan/work/test
